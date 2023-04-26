@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Http
+@using BusinessLayer
+
+@model ExcelDataModel
+
+@{
+    ViewData["Title"] = "Excel Merge";
+}
+
+<h1>Show File-select Fields</h1>
+
+<h3>Show a file-select field which allows only one file to be chosen:</h3>
+
+<form asp-action="ExcelMerge">
+
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile"><br><br>
+
+    <label asp-for="PrimaryKey1"></label>
+    <input asp-for="PrimaryKey1" type="text" id="PK1"></input>
+
+    <label asp-for="PrimaryKey2"></label>
+    <input asp-for="PrimaryKey2" type="text" id="PK2"></input>
+
+    <input type="submit">
+</form>

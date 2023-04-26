@@ -1,0 +1,56 @@
+﻿@* ExcelApp/Views/Home/ExcelMerge.cshtml *@
+@using Microsoft.AspNetCore.Http
+@model ExcelApp.Models.ExcelDataModel
+
+@{
+    ViewData["Title"] = "Excel Merge";
+}
+
+<h1>Show File-select Fields Test</h1>
+
+<h3>Show a file-select field which allows only one file to be chosen:</h3>
+
+<form asp-action="ExcelMerge" method="post" enctype="multipart/form-data">
+    <label for="MainFile">Select main file:</label>
+    <input type="file" id="MainFile" name="MainFile"><br><br>
+
+    <label for="SecondFile">Select second file:</label>
+    <input type="file" id="SecondFile" name="SecondFile"><br><br>
+
+    <label asp-for="PrimaryKey1">Primary Key 1:</label>
+    <input asp-for="PrimaryKey1" type="text" id="PK1"></input>
+
+    <label asp-for="PrimaryKey2">Primary Key 2:</label>
+    <input asp-for="PrimaryKey2" type="text" id="PK2"></input>
+
+    <label asp-for="SelectedColumn">Selected Column:</label>
+    <input asp-for="SelectedColumn" type="text" id="SelectedColumn"></input>
+
+    <input type="submit">
+</form>
+
+<!-- Display merged data in a table -->
+@if (Model.MergedData != null)
+{
+    <table>
+        <thead>
+            <tr>
+                @foreach (System.Data.DataColumn column in Model.MergedData.Columns)
+                {
+                    <th>@column.ColumnName</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (System.Data.DataRow row in Model.MergedData.Rows)
+            {
+                <tr>
+                    @foreach (var cell in row.ItemArray)
+                    {
+                        <td>@cell.ToString()</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
