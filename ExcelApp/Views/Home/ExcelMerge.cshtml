@@ -6,9 +6,8 @@
     ViewData["Title"] = "Excel Merge";
 }
 
-<h1>Show File-select Fields Test</h1>
+<h1>Excel Merger</h1>
 
-<h3>Show a file-select field which allows only one file to be chosen:</h3>
 
 <form asp-action="ExcelMerge" method="post" enctype="multipart/form-data">
     <label for="MainFile">Select main file:</label>
@@ -23,14 +22,16 @@
     <label asp-for="PrimaryKey2">Primary Key 2:</label>
     <input asp-for="PrimaryKey2" type="text" id="PK2"></input>
 
-    <label asp-for="SelectedColumn">Selected Column:</label>
-    <input asp-for="SelectedColumn" type="text" id="SelectedColumn"></input>
+    <label asp-for="SelectedColumns">Selected Column:</label>
+    <input asp-for="SelectedColumns" type="text" id="SelectedColumn"></input>
 
-    <input type="submit">
+<input type="submit" value="Sync" id="syncButton">
 </form>
 
+<button id="downloadButton" type="button">Download</button>
+
 <!-- Display merged data in a table -->
-@if (Model.MergedData != null)
+@if (Model.MergedData != null && Model.MergedData.Columns != null && Model.MergedData.Rows != null)
 {
     <table>
         <thead>
@@ -54,3 +55,28 @@
         </tbody>
     </table>
 }
+
+
+@section scripts{
+    <script>
+        var downloadButton = document.getElementById("downloadButton");
+        //var syncButton = document.getElementById("syncButton");
+
+        function enableDownloadButton() {
+            downloadButton.disabled = false;
+        }
+
+        syncButton.addEventListener("click", function () {
+            downloadButton.disabled = true;
+        });
+
+        downloadButton.addEventListener("click", function () {
+            window.location.href = '@Url.Action("DownloadMergedFile", "Home")';
+        });
+    </script>
+}
+
+
+
+
+

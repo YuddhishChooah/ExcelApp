@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\yuddh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yuddh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,18 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

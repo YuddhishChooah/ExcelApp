@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\ExcelApp\\ExcelApp.csproj": {}
+    "C:\\Users\\yuddh\\source\\repos\\workTry\\ExcelApp\\ExcelApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\yuddh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yuddh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,18 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -69,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\ExcelApp\\ExcelApp.csproj": {
+    "C:\\Users\\yuddh\\source\\repos\\workTry\\ExcelApp\\ExcelApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\ExcelApp\\ExcelApp.csproj",
+        "projectUniqueName": "C:\\Users\\yuddh\\source\\repos\\workTry\\ExcelApp\\ExcelApp.csproj",
         "projectName": "ExcelApp",
-        "projectPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\ExcelApp\\ExcelApp.csproj",
+        "projectPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\ExcelApp\\ExcelApp.csproj",
         "packagesPath": "C:\\Users\\yuddh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\ExcelApp\\obj\\",
+        "outputPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\ExcelApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yuddh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\yuddh\\source\\repos\\ExcelApp\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\yuddh\\source\\repos\\workTry\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
@@ -112,6 +124,18 @@
             "EPPlus": {
               "target": "Package",
               "version": "[6.2.2, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
